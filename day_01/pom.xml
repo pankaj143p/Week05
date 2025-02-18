@@ -24,6 +24,25 @@
             <artifactId>opencsv</artifactId>
             <version>5.5.2</version> <!-- Or replace with the latest version -->
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>8.0.25</version> &lt;!&ndash; Use the latest version &ndash;&gt;-->
+<!--        </dependency>-->
+
+            <!-- JSON library for JSON parsing -->
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>20210307</version>
+            </dependency>
+        <dependency>
+            <groupId>io.github.cdimascio</groupId>
+            <artifactId>dotenv-java</artifactId>
+            <version>4.2.2</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>
