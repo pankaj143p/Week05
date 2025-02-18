@@ -28,6 +28,7 @@ public class ModifyCSVFile {
                 bw.write(String.join(",", arr) + "\n");
             }
             System.out.println("File written successfully");
+            bw.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
