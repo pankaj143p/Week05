@@ -1,4 +1,4 @@
-package problems.csv;
+package problems.csv.basic;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

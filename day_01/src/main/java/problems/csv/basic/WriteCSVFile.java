@@ -1,4 +1,4 @@
-package problems.csv;
+package problems.csv.basic;
 import  com.opencsv.*;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
