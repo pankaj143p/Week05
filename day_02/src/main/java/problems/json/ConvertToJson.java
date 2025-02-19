@@ -3,6 +3,8 @@ package problems.json;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.File;
+
 class Car{
     String name;
     int price;
@@ -36,6 +38,10 @@ public class ConvertToJson {
         car.setColor("Red");
         ObjectMapper mapper = new ObjectMapper();
         String details = mapper.writeValueAsString(car);
-        System.out.println(car);
+        System.out.println(details);
+                String currentPath = System.getProperty("user.dir");
+
+                // Print the current path
+                System.out.println("Current Working Directory: " + currentPath);
     }
 }
