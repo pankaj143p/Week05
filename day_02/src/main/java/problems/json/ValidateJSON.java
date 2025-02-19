@@ -1,16 +1,10 @@
 package problems.json;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.JsonNodeFactory;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.fge.jsonschema.core.exceptions.ProcessingException;
-import com.github.fge.jsonschema.core.report.ProcessingMessage;
 import com.github.fge.jsonschema.core.report.ProcessingReport;
-import com.github.fge.jsonschema.main.*;
 import com.github.fge.jsonschema.main.JsonSchema;
 import com.github.fge.jsonschema.main.JsonSchemaFactory;
-
-
 import java.io.File;
 import java.io.IOException;
 
@@ -19,12 +13,10 @@ public class ValidateJSON {
     public static void main(String[] args) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-
             JsonNode jsonNode = objectMapper.readTree(new File("data.json"));
             JsonNode schemaJSON = objectMapper.readTree(new File("isvaliddata.json"));
             JsonSchemaFactory factory = JsonSchemaFactory.byDefault();
             JsonSchema schema = factory.getJsonSchema(schemaJSON);
-
             ProcessingReport report = schema.validate(jsonNode);
             if (report.isSuccess()){
                 System.out.println(true);
