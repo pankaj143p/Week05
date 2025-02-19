@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Iterator;
 
 //Parse JSON and filter only those records where age > 25.
-public class ParseJSON {
+ class ParseJSON {
     public static void main(String[] args) {
         JsonMapper jsonMapper = new JsonMapper();
         try {
